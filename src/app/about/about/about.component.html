@@ -1,0 +1,26 @@
+<div class="container">
+    <h1 class="text-decoration-underline mb-5">Example for ngClass and ngStyle </h1>
+    <div class="margin">
+        <input type="text" [ngStyle]="{color: 'blue', 'font-weight':'400'}" [(ngModel)]="firstName"
+            placeholder="Write Something here">
+
+        <h1 [ngStyle]="{color:'red', 'font-weight':'400'}"><span style="color: black">This is Two way
+                binding:</span> {{
+            firstName }}</h1>
+    </div>
+
+
+    <h2 [class.red]="true">Attribute Change</h2><br />
+    <h2 [ngClass]="{'blue':true}">Attribute Change by Using NgClass</h2><br />
+    <h2 [ngStyle]="{'font-size':'20px','color':'green'}">Attribute Change by Using NgStyle</h2>
+    <br /><br />
+    <h2 [class.cyan]="showColor">Attribute Change</h2><br />
+    <h2 [ngClass]="{'brown':showColor}">Attribute Change by Using NgClass</h2><br />
+    <h4>Click Button to change color : <input type="button" value="Change Color" (click)="changeColor()" class="btn" />
+    </h4>
+    <br /><br />
+    <h2 [class.cyan]="showColor">Attribute Change</h2><br />
+    <h2 [ngClass]="{'cyan':showColor, 'red' : !showColor}">Attribute Change by Using NgClass</h2><br />
+    <br />
+
+</div>

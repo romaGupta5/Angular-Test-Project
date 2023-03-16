@@ -1,0 +1,32 @@
+.red {
+    color: red;
+}
+
+.blue {
+    color: blue
+}
+
+.cyan {
+    color: rgba(39, 129, 0, 0.71)
+}
+
+.brown {
+    color: brown
+}
+
+.btn {
+    background-color: rgba(7, 92, 98, 0.902);
+    color: aliceblue;
+}
+
+input[type=text] {
+    width: 100%;
+    height: 60px;
+    border-radius: 5px;
+    border: 2px solid rgb(83, 81, 81);
+    padding-left: 15px;
+}
+
+.margin {
+    margin-bottom: 50px;
+}

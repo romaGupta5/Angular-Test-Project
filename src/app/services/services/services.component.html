@@ -1,0 +1,25 @@
+<h3 class="mt-3 text-decoration-underline">Example for Structural Directives :</h3>
+<div class="container mt-5">
+    <div class="table-responsive">
+        <table class="table table-striped" *ngIf='products && products.length'>
+            <thead class="thead-dark bg-dark text-light">
+                <tr>
+                    <th>ProductID</th>
+                    <th>ProductName</th>
+                    <th>CategoryId</th>
+                    <th>AvilableQty</th>
+                    <th>ReorderQty</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor='let product of products'>
+                    <td>{{product.productId}}</td>
+                    <td>{{product.productName}}</td>
+                    <td>{{product.categoryId}}</td>
+                    <td>{{product.availableQty}}</td>
+                    <td>{{product.reorderQty}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <div>
+        </div>
